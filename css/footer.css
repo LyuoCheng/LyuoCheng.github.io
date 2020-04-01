@@ -1,0 +1,23 @@
+footer .contact {
+    width: 100%;
+    min-width: 32.75rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+footer .contact div {
+    display: inline-block;
+    width: 100%;
+    min-width: 32.75rem;
+    margin-top: 0.5rem;
+}
+
+
+footer .copyright {
+    width: 100%;
+    font-size: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}

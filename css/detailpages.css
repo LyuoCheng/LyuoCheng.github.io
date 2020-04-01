@@ -1,0 +1,74 @@
+main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 6.25em;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.img-wrap {
+    max-width: 100%;
+    min-width: 32.75em;
+    height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.imgbox {
+    width: 0px;
+    text-align: left;
+    transition: 0.6 all;
+    margin-left: 0px;
+}
+
+.imgbox .img {
+    width: auto;
+    height: 750px;
+    display: inline-block;
+}
+
+.imgbox .introbox {
+    width: 500px;
+    height: 750px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.imgbox .introbox h2 {
+    margin-left: 5%;
+}
+
+.imgbox .introbox .intro {
+    text-align: justify;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.previous,
+.next {
+    border: solid red;
+    height: 650px;
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.previous {
+    float: left;
+    margin-left: -45%;
+    margin-top: -700px;
+}
+
+.next {
+    float: right;
+    margin-left: 0;
+    margin-top: -700px;
+    z-index: 1;
+}

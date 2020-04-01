@@ -1,0 +1,86 @@
+.header-wrapper {
+    width: 100%;
+    min-width: 32.75rem;
+    position: fixed;
+    margin: 0 auto;
+    margin-top: 1rem;
+    z-index: 2;
+    user-select: none;
+}
+
+.header-wrapper .logo {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.logo-img {
+    width: 40%;
+    min-width: 9.375rem;
+}
+
+.sidebar {
+    float: left;
+    width: 12.5em;
+    margin-left: -13.75em;
+    height: 120%;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.6s all;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    user-select: none;
+}
+.sidebar ul {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 5.6rem;
+}
+
+.sidebar ul li {
+    list-style: none;
+    float: left;
+    margin: 0px 6.25rem 0px 1.5625rem;
+    line-height: 3.125rem;
+    color: black;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    /* height: 100px; */
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+}
+.side {
+    margin-left: 0;
+}
+
+.btn {
+    float: left;
+    padding: 0.0625rem;
+    font-size: 200%;
+    margin-top: 1.2rem;
+    margin-left: 1.5625rem;
+    text-decoration: none;
+    color: black;
+    font-family: ionicons;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+}
+
+
+.btn:before {
+    content: '\f32a';
+}
+
+.btnc:before {
+    content: '\f2c0';
+}

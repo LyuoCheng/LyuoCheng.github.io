@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Avenirnext';
+    src: url('../fonts/avenirnext-bolditalic.ttf') format('truetype');
+}
+
+@import "https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css";
+
+body,html {
+    font-family: 'Avenirnext';
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    min-width: 32.75rem;
+    height: 10rem;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}

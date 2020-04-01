@@ -1,0 +1,50 @@
+main{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    padding-top: 6.25em;
+    z-index: 1;
+    text-align: center;
+    user-select: none;
+}
+
+
+.gallery-wrap{
+    width: 100%;
+    max-width: 80em;
+    min-width: 32.75em;
+    margin: 0 auto;
+    display: table;
+    touch-action: pan-y;
+}
+
+main .cansee{
+    width: 15.625em;
+    height: 23.4375em;
+    margin:0 auto;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 0.5rem;
+    z-index: 1;
+}
+
+main .cantsee{
+    width: 15.625em; 
+    margin:0 auto;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+main .imgbox{
+    transition: all 0s;
+}
+
+main .imgbox:hover{
+    transform: translateY(-50%);
+}
+
+main .gallery-wrap .cansee img{
+    width: 100%;
+}
+
