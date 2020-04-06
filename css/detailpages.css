@@ -49,26 +49,3 @@ main {
     height: auto;
     margin-left: 5%;
 }
-
-.previous,
-.next {
-    border: solid red;
-    height: 650px;
-    width: 45%;
-    display: inline-block;
-    position: absolute;
-    cursor: pointer;
-}
-
-.previous {
-    float: left;
-    margin-left: -45%;
-    margin-top: -700px;
-}
-
-.next {
-    float: right;
-    margin-left: 0;
-    margin-top: -700px;
-    z-index: 1;
-}
