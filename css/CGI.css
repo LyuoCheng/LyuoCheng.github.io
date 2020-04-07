@@ -10,7 +10,7 @@ main {
 
 .videowrap3 {
     width: 32%;
-    height: 20em;
+    height: auto;
     display: inline-block;
     margin: 0 auto;
     border: 1px red solid;
@@ -19,7 +19,7 @@ main {
 
 .videowrap2 {
     width: 49%;
-    height: 20em;
+    height: auto;
     display: inline-block;
     margin: 0 auto;
     border: 1px red solid;
@@ -28,7 +28,7 @@ main {
 
 .videowrap1 {
     width: 96%;
-    height: 20em;
+    height: auto;
     display: inline-block;
     margin: 0 auto;
     border: 1px red solid;
@@ -36,7 +36,7 @@ main {
 
 .videobox{
     width:100%;
-    height:auto;
+    height:20em;
     display: inline-block;
     margin: 0 auto;
     border: solid 1px yellow;
