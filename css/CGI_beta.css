@@ -38,11 +38,7 @@ main {
 
 .videobox{
     width:100%;
-    max-width: 637px;
     height:auto;
     margin: 0 auto;
-    display: inline-block;
-}
-.iframe{
-    width:100%;
+    float: left;
 }

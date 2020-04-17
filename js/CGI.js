@@ -2,56 +2,73 @@ window.onload = function () {
     path = "";
     mainEle = document.getElementById('main');
     mainWidth = mainEle.offsetWidth;
+
     videoWrap = new Array();
-    vwNum = 0;
-    var xmlhttp= new this.XMLHttpRequest();
+    for (var i = 0; i < 3; i++) videoWrap[i] = document.createElement('div');
+
+    vbNum = 0;
+    videoBox = new Array();
+    videoFrame = new Array();
+    videoMsg=[
+        {"name":"PUNK LUDA",
+        "url":"//player.bilibili.com/player.html?aid=412507620&bvid=BV1uV411f7WV&cid=173831641&page=1&high_quality=1&danmaku=0",
+        "doc":"I am PUNK LUDA's Doc"}
+    ];
+
+    for (i in videoMsg) {
+        var videoCtn = videoMsg[i];
+        videoBox[vbNum] = document.createElement('div');
+        videoBox[vbNum].setAttribute('class', 'videobox');
+
+        var name = document.createElement('h2');
+        var nameNode = document.createTextNode(videoCtn.name);
+        name.appendChild(nameNode);
+
+        videoFrame[vbNum] = document.createElement('iframe');
+        videoFrame[vbNum].setAttribute('class','iframe');
+        videoFrame[vbNum].src = videoCtn.url;
+        videoFrame[vbNum].frameBorder = "no";
+        videoFrame[vbNum].frameSpacing = "no";
+        videoFrame[vbNum].allowFullscreen = "true";
+        videoFrame[vbNum].sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts";
+        // video.style.width=videoBox[vbNum].offsetWidth;
+        // video.style.height=0.5625*videoBox[vbNum].offsetWidth;
+
+        var doc = document.createElement('p');
+        var docNode = document.createTextNode(videoCtn.doc);
+        doc.appendChild(docNode);
+
+        videoBox[vbNum].appendChild(videoFrame[vbNum]);
+        videoBox[vbNum].appendChild(name);
+        videoBox[vbNum].appendChild(doc);
+
+        vbNum++;
+
+    }
+    appendElement(mainEle, 1, path);
+    var videoHeight=videoBox[0].offsetWidth * 0.5625;
+    for(var i=0; i<vbNum ;i++) {
+        videoFrame[i].height=videoHeight;
+    }
+    alert(videoBox[0].offsetWidth);
     
-    if (mainWidth >= 1264) {
-        vwNum = 3;
-        appendElement(mainEle, vwNum, path);
-    } else if (1264 > mainWidth && mainWidth >= 836) {
-        vwNum = 2;
-        appendElement(mainEle, vwNum, path);
-    } else if (836 > mainWidth) {
-        vwNum = 1;
-        appendElement(mainEle, vwNum, path);
-    }
 }
-window.onresize = function () {
-    removeElement(mainEle, vwNum);
-    mainWidth = mainEle.offsetWidth;
-    if (mainWidth >= 1264) {
-        vwNum = 3;
-        appendElement(mainEle, vwNum, path);
-    } else if (1264 > mainWidth && mainWidth >= 836) {
-        vwNum = 2;
-        appendElement(mainEle, vwNum, path);
-    } else if (836 > mainWidth) {
-        vwNum = 1;
-        appendElement(mainEle, vwNum, path);
-    }
+
+window.onresize =function(){
+    var videoHeight=videoBox[0].offsetWidth * 0.5625;
+    for(var i=0; i<vbNum ;i++) videoFrame[i].height=videoHeight;
+
 }
+
 
 function appendElement(ele, childNum, filedir) {
     for (var i = 0; i < childNum; i++) {
-        videoWrap[i] = document.createElement('div');
-        if (childNum == 3) videoWrap[i].setAttribute("class", "videowrap3");
-        if (childNum == 2) videoWrap[i].setAttribute("class", "videowrap2");
-        if (childNum == 1) videoWrap[i].setAttribute("class", "videowrap1");
+        if (childNum == 3) videoWrap[i].className = "videowrap3";
+        if (childNum == 2) videoWrap[i].className = "videowrap2";
+        if (childNum == 1) videoWrap[i].className = "videowrap1";
         ele.appendChild(videoWrap[i]);
     }
-    var videoNum = 10;
-    var videoBox = new Array();
-    for (var i = 0; i < videoNum; i++) {
-        videoBox[i] = document.createElement('div');
-        videoBox[i].setAttribute('class', 'videobox');
-        var index = i % childNum;
-        videoWrap[index].appendChild(videoBox[i]);
-    }
-}
-
-function removeElement(ele, childNum) {
-    for (var i = 0; i < childNum; i++) {
-        ele.removeChild(videoWrap[i]);
+    for (var i = 0; i < vbNum; i++) {
+        videoWrap[0].appendChild(videoBox[i]);
     }
 }
