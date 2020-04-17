@@ -50,7 +50,6 @@ window.onload = function () {
     for(var i=0; i<vbNum ;i++) {
         videoFrame[i].height=videoHeight;
     }
-    alert(videoBox[0].offsetWidth);
     
 }
 
