@@ -13,7 +13,7 @@ document.writeln("<div class=\"sidebar\">");
     document.writeln("<ul class=\"nav\">");
         // document.writeln("<li><a href=\"/\">HOMEPAGE</a></li>");
         document.writeln("<li><a href=\"/\">PHOTOGRAPH</a></li>");
-        document.writeln("<li><a href=\"/\">CGI</a></li>");
+        document.writeln("<li><a href=\"/pages/CGI.html\">CGI</a></li>");
         document.writeln("<li><a href=\"/\">PROJECT</a></li>");
         document.writeln("<li><a href=\"/\">CONTACT</a></li>");
     document.writeln("</ul>");
