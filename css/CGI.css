@@ -3,7 +3,7 @@ main {
     height: auto;
     margin: 0 auto;
     padding-top: 6.25em;
-    padding-bottom:3em;
+    padding-bottom: 3em;
     z-index: 1;
     text-align: center;
     margin-bottom: 1em;
@@ -36,13 +36,14 @@ main {
     margin-bottom: 3em;
 }
 
-.videobox{
-    width:100%;
+.videobox {
+    width: 100%;
     max-width: 637px;
-    height:auto;
+    height: auto;
     margin: 0 auto;
     display: inline-block;
 }
-.iframe{
-    width:100%;
+
+.iframe {
+    width: 100%;
 }

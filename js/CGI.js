@@ -1,5 +1,4 @@
 window.onload = function () {
-    path = "";
     mainEle = document.getElementById('main');
     mainWidth = mainEle.offsetWidth;
 

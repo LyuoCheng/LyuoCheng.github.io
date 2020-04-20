@@ -1,0 +1,62 @@
+.s404 {
+    font-size: 100px;
+    user-select: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.backtoindex:link{
+    color: cornflowerblue;
+}
+
+.backtoindex:visited{
+    color: cornflowerblue;
+}
+
+.backtoindex:hover{
+    color: cornflowerblue;
+}
+
+.inscr {
+    margin-top: 10rem;
+    font-size: 10px;
+    color: gray;
+    user-select: none;
+}
+
+.icon {
+    margin-top: 2rem;
+    width: 5%;
+}
+.fakea{
+    cursor: pointer;
+}
+
+.svg {
+    width: 1rem;
+}
+
+
+.QR{
+    width: 20rem;
+    display: none;
+}
+.QRc{
+    display: inline;
+}
+
+.textarea{
+    margin-top: 10rem;
+}

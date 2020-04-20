@@ -31,6 +31,7 @@
     z-index: 3;
     user-select: none;
 }
+
 .sidebar ul {
     display: table;
     margin: 0 auto;
@@ -45,6 +46,7 @@
     line-height: 3.125rem;
     color: black;
 }
+
 .sidebar ul li a {
     text-decoration: none;
     color: black;
@@ -56,6 +58,7 @@
     display: block;
     transition: 0.6s all;
 }
+
 .side {
     margin-left: 0;
 }
@@ -83,4 +86,21 @@
 
 .btnc:before {
     content: '\f2c0';
+}
+
+.home {
+    user-select: none;
+}
+
+.home:link {
+    text-decoration: none;
+}
+
+.home:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.home:hover {
+    text-decoration: none;
 }

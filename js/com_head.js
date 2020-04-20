@@ -7,3 +7,4 @@ document.writeln("<script src=\"https://cdn.bootcss.com/jquery/3.2.1/jquery.min.
 document.writeln("<script type=\"module\" src=\"https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js\"></script>")
 document.writeln("<script src=\"https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js\"></script>") 
 // document.writeln("<script src=\"https://unpkg.com/ionicons@5.0.0/dist/ionicons.js\"></script>");
+document.writeln("<link rel=\"icon\" href=\"/img/logo/favicon.png\" type=\"image/png\"/>");
