@@ -1,0 +1,11 @@
+User-agent:*
+Disallow:/.vscode
+Disallow:/css
+Disallow:/fonts
+Disallow:/img
+Disallow:/js
+Disallow:/json
+Disallow:/pages
+Disallow:.gitignore
+Disallow:404.html
+Disallow:CNAME

@@ -33,7 +33,7 @@
 }
 
 .inscr {
-    margin-top: 9rem;
+    margin-top: 8rem;
     font-size: 10px;
     color: gray;
     user-select: none;
@@ -41,7 +41,7 @@
 
 .icon {
     margin-top: 2rem;
-    width: 5%;
+    width: 4rem;
 }
 
 .svg {
