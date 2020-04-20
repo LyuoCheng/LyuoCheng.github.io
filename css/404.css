@@ -2,6 +2,9 @@
     font-size: 100px;
     user-select: none;
 }
+.a{
+    cursor: pointer;
+}
 
 .a:link {
     text-decoration: none;
@@ -39,9 +42,6 @@
 .icon {
     margin-top: 2rem;
     width: 5%;
-}
-.fakea{
-    cursor: pointer;
 }
 
 .svg {
