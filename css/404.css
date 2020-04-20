@@ -30,7 +30,7 @@
 }
 
 .inscr {
-    margin-top: 10rem;
+    margin-top: 9rem;
     font-size: 10px;
     color: gray;
     user-select: none;
@@ -49,13 +49,20 @@
 }
 
 
-.QR{
+.QRimg{
     width: 20rem;
-    display: none;
+}
+
+.QR{
+    height: 1.25rem;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
 }
 .QRc{
-    display: inline;
+    height: 21.25rem;
+    transition: height 0.5s ease-in-out;
 }
+
 
 .textarea{
     margin-top: 10rem;
