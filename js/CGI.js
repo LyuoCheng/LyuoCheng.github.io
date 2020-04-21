@@ -44,7 +44,7 @@ window.onload = function () {
         vbNum++;
 
     }
-    appendElement(mainEle, 1, path);
+    appendElement(mainEle, 1);
     var videoHeight=videoBox[0].offsetWidth * 0.5625;
     for(var i=0; i<vbNum ;i++) {
         videoFrame[i].height=videoHeight;
@@ -59,7 +59,7 @@ window.onresize =function(){
 }
 
 
-function appendElement(ele, childNum, filedir) {
+function appendElement(ele, childNum) {
     for (var i = 0; i < childNum; i++) {
         if (childNum == 3) videoWrap[i].className = "videowrap3";
         if (childNum == 2) videoWrap[i].className = "videowrap2";
