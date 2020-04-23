@@ -10,3 +10,16 @@ document.writeln("<script type=\"module\" src=\"https://unpkg.com/ionicons@5.0.0
 document.writeln("<script src=\"https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js\"></script>") 
 // document.writeln("<script src=\"https://unpkg.com/ionicons@5.0.0/dist/ionicons.js\"></script>");
 document.writeln("<link rel=\"icon\" href=\"/img/logo/favicon.png\" type=\"image/png\"/>");
+//百度自动提交
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();

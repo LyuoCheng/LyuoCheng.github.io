@@ -10,7 +10,7 @@ window.onload = function () {
     videoFrame = new Array();
     videoMsg=[
         {"name":"PUNK LUDA",
-        "url":"//player.bilibili.com/player.html?aid=412507620&bvid=BV1uV411f7WV&cid=173831641&page=1&high_quality=1&danmaku=0",
+        "url":"https://player.bilibili.com/player.html?aid=412507620&bvid=BV1uV411f7WV&cid=173831641&page=1&high_quality=1&danmaku=0",
         "doc":"I am PUNK LUDA's Doc"}
     ];
 
@@ -28,7 +28,7 @@ window.onload = function () {
         videoFrame[vbNum].src = videoCtn.url;
         videoFrame[vbNum].frameBorder = "no";
         videoFrame[vbNum].frameSpacing = "no";
-        videoFrame[vbNum].allowFullscreen = "true";
+        videoFrame[vbNum].allowFullscreen = "allowfullscreen";
         videoFrame[vbNum].sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts";
         // video.style.width=videoBox[vbNum].offsetWidth;
         // video.style.height=0.5625*videoBox[vbNum].offsetWidth;
